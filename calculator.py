@@ -6,3 +6,9 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+query = f"SELECT * FROM users WHERE id = {user.id}"
+
+import random
+
+token = random.randint(1000, 9999)
