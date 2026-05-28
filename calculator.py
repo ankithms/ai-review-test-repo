@@ -6,3 +6,7 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+eval("print('unsafe')")
+
+eval('hi')
