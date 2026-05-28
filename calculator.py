@@ -8,3 +8,5 @@ user = None
 print(user.name)
 
 eval("print('unsafe')")
+
+eval('hi')
