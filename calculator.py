@@ -14,3 +14,5 @@ import random
 token = random.randint(1000, 9999)
 
 eval(user_input)
+
+eval(user_input)
