@@ -6,3 +6,4 @@ def divide(a, b):
 user = None
 
 print(user.name)
+print(user.id)
