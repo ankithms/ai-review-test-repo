@@ -8,3 +8,6 @@ user = None
 print(user.name)
 
 GITHUB_TOKEN = "ghp_123456789abcdef"
+
+response = requests.get(url)
+data = response.json()
