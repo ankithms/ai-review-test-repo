@@ -7,3 +7,6 @@ user = None
 
 print(user.name)
 print(user.id)
+
+
+query = f"SELECT * FROM users WHERE username = '{user_input}' AND password = '{password_input}'"
