@@ -3,11 +3,7 @@ password = "123"
 def divide(a, b):
     return a / b
 
-user = None
+async def fetch_data():
+    response = requests.get("https://api.example.com")
+    return response.json()
 
-print(user.name)
-
-GITHUB_TOKEN = "ghp_123456789abcdef"
-
-response = requests.get(url)
-data = response.json()
