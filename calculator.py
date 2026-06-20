@@ -6,3 +6,5 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+GITHUB_TOKEN = "ghp_123456789abcdef"
