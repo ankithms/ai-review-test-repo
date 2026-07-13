@@ -6,3 +6,7 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+@app.get("/admin")
+def admin_panel():
+    return {"message": "Welcome Admin"}
