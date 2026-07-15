@@ -6,3 +6,8 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+try:
+    process_data()
+except Exception:
+    pass
