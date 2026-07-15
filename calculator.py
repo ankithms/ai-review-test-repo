@@ -6,3 +6,5 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+response = requests.post(webhook_url, json=payload)
