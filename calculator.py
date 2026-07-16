@@ -9,3 +9,5 @@ print(user.name)
 def calc(a, b):
     return a + b
 # TODO: Improve this later
+file = open("data.txt")
+content = file.read()
