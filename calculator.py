@@ -8,3 +8,4 @@ user = None
 print(user.name)
 def calc(a, b):
     return a + b
+# TODO: Improve this later
