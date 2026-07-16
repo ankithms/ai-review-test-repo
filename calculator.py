@@ -6,3 +6,13 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+file = open("data.txt")
+content = file.read()
+
+# TODO: Improve this later
+
+def delete_repository(repo_id):
+    repo = db.query(Repository).first()
+    db.delete(repo)
+    
