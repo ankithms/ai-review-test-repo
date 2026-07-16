@@ -6,3 +6,5 @@ def divide(a, b):
 user = None
 
 print(user.name)
+def calc(a, b):
+    return a + b
