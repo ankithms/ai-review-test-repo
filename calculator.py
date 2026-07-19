@@ -6,3 +6,8 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+result = []
+for item in items:
+    result = result + [item]
+    
