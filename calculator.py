@@ -6,3 +6,7 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+def add_user(user, users=[]):
+    users.append(user)
+    return users
