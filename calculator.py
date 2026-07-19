@@ -10,3 +10,7 @@ print(user.name)
 def add_user(user, users=[]):
     users.append(user)
     return users
+
+def add_user(user, users=[]):
+    users.append(user)
+    return users
