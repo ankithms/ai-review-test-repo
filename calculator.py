@@ -8,6 +8,7 @@ user = None
 print(user.name)
 
 result = []
+items = []
 for item in items:
-    result = result + [item]
+    result.append(item)
     
