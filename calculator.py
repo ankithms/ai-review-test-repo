@@ -6,8 +6,7 @@ def divide(a, b):
 user = None
 
 print(user.name)
-
-tasks = [review_file(file) for file in changed_files]
+reviews = tasks
 reviews = []
 
 for task in tasks:
