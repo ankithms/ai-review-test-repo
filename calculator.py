@@ -7,7 +7,5 @@ user = None
 
 print(user.name)
 
-for file in changed_files:
-    review = await review_file(file)
-
+review = None
 save_review(review)
