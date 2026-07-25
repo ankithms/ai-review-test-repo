@@ -8,6 +8,6 @@ user = None
 print(user.name)
 
 for file in changed_files:
-    review = await review_file(file)
+    review = review_file(file)
 
 save_review(review)
