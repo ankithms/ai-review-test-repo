@@ -1,4 +1,3 @@
-# app/services/users.py
 from app.security.password_policy import hash_password, validate_password_policy
 
 
@@ -20,3 +19,12 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
     user = User(email=email.lower(), password_hash=hash_password(password))
     return repository.save(user)
+
+
+def reset_password(user: User, new_password: str) -> User:
+    user.password_hash = hash_password(new_password)
+    return user
+
+def change_email(user: User, new_email: str) -> User:
+    user.email = new_email
+    return user
