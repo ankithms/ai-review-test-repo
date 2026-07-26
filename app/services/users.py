@@ -22,6 +22,9 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
 
 def reset_password(user: User, new_password: str) -> User:
+    policy_result = validate_password_policy(new_password)
+    if not policy_result.valid:
+        raise ValueError(policy_result.reason or "Invalid password.")
     user.password_hash = hash_password(new_password)
     return user
 
