@@ -23,4 +23,4 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
 def reset_password(user: User, new_password: str) -> User:
     user.password_hash = hash_password(new_password)
-    return user
+    return repository.save(user)
