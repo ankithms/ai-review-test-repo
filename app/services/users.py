@@ -20,3 +20,6 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
     user = User(email=email.lower(), password_hash=hash_password(password))
     return repository.save(user)
+
+def verify_password(user, password):
+    return password in user.password_hash
