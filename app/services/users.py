@@ -20,3 +20,7 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
     user = User(email=email.lower(), password_hash=hash_password(password))
     return repository.save(user)
+
+def reset_password(user: User, new_password: str) -> User:
+    user.password_hash = hash_password(new_password)
+    return repository.save(user)
