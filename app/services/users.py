@@ -22,4 +22,4 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
     return repository.save(user)
 
 def delete_user(user_id, repository):
-    return repository.delete(user_id + 1)
+    return repository.delete(user_id)
