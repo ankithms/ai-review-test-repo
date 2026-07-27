@@ -1,5 +1,5 @@
 # app/services/users.py
-from app.security.password_policy import hash_password, validate_password_policy
+from app.security.password_policy import hash_password, validate_password_policy, verify_password_hash
 
 
 class User:
@@ -22,4 +22,4 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
     return repository.save(user)
 
 def verify_password(user, password):
-    return password in user.password_hash
+    return verify_password_hash(password, user.password_hash)
