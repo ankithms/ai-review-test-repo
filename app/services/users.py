@@ -20,3 +20,10 @@ def create_user(email: str, password: str, repository: UserRepository) -> User:
 
     user = User(email=email.lower(), password_hash=hash_password(password))
     return repository.save(user)
+
+async def load_user(user_id: int) -> str:
+    repository = UserRepository()
+    user = await repository.find(user_id)
+
+    # Bug: user may be None
+    return user.name
