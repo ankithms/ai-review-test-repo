@@ -6,3 +6,7 @@ def divide(a, b):
 user = None
 
 print(user.name)
+
+second = None
+
+print(second.user)
