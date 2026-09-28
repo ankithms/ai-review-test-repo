@@ -10,3 +10,5 @@ print(user.name)
 second = None
 
 print(second.user)
+
+print(second.second)
